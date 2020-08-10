@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitales</title>
+    <link rel="stylesheet" href="Css/estilos.css">
+    <link rel="stylesheet" href="Css/hospitales.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/hospitales.js"></script>
+</head>
+<body>
+    <header>
+        <section class="contenedorHeader">
+            
+            <div class="item1">
+                <img id="logo" src="img/Logo-Empresa.png" alt="">
+            </div>
+            <div class="item2">
+                <h2> 
+                    <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+                        <input id="buscadorRecuadro" list="menu" name="menu">
+                         <datalist id="menu">
+                           <option value="Hospitales"></option>
+                           <option value="Enfermedades"></option>
+                           <option value="Contacto"></option>
+                           <option value="Vacunas"></option>
+                           <option value="Home"></option>
+                         </datalist>
+                         <input type="submit" value="Buscar">
+                     </form>
+                </h2>
+            </div>
+            <div class="contenedorUsuario">
+                <div id="logIn">
+                   <a href="contacto.html"><p>LOG IN</p></a> 
+                </div>
+                <div id="singIn">
+                   <a href="contacto.html"><p>SING IN</p></a> 
+                </div>
+            </div>
+        </section>
+    </header>
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="listadoDeEnfermedad.html">ENFERMEDADES</a>
+        <a href="vacunacion.html">VACUNACION</a>
+        <a href="contacto.html">CONTACTO</a>
+        <a href="">HOSPITALES</a>
+    </nav>
+    <main>
+
+        <h1>MAPA DE HOSPITALES MAS CERCANOS</h1>
+
+        <section class="buscador">
+            <article>
+                <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+                   <input id="buscadorRecuadro" list="ciudades" name="ciudad" placeholder="Zona Oeste">
+                    <datalist id="ciudades">
+                      <option value="Zona Oeste"></option>
+                      <option value="Zona Sur"></option>
+                      <option value="Zona Norte"></option>
+                      <option value="Zona Este"></option>
+                    </datalist>
+                    <input type="submit" value="Buscar">
+                </form>
+            </article>
+        </section>
+
+        <section class="contenedorCajaHospitales">
+            <article class="contenedorInfoHospital">
+                <h3><a id="abrirItaliano">HOSPITAL ITALIANO</a></h3>
+                <div class="popupItaliano" style="display: block;">
+                    <a id="cerrarItaliano">Cerrar</a>
+                    <h2>Hospital ITALIANO</h2>
+                        <p>Hospital general en San Justo
+                            Dirección: Pres. Juan Domingo Perón 2231, B1702 Buenos Aires, Provincia de Buenos Aires
+                            Horario: 
+                            Abierto las 24 horas
+                                                        
+                            Teléfono: 011 4959-0200
+                        </p>
+                    </div>
+                <img src="img/hospital-italiano.jpg" alt="">
+            </article>
+            <article>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26253.102159577025!2d-58.561787119658284!3d-34.66384984491676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6bfb23993380cd47!2sHospital%20Italiano%20Centro%20Periferico%20Ramos%20Mejia!5e0!3m2!1ses-419!2sar!4v1591100793282!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </article>
+        </section>
+
+        <section class="contenedorCajaHospitales">
+            <article class="contenedorInfoHospital">
+                <h3><a id="abrirPosadas">HOSPITAL POSADAS</a></h3>
+                <div class="popupPosadas" style="display: block;">
+                <a id="cerrarPosadas">Cerrar</a>
+                <h2>Hospital POSADAS</h2>
+                    <p>Dirección: Avenida Presidente Arturo U. Illia s/n y Marconi Morón 386, B1684 El Palomar, Provincia de Buenos Aires
+                        Horario: 
+                        Abierto las 24 horas
+                                                 
+                        Teléfono: 011 4469-9300
+                        Especialidad: Atendemos a las personas en todas las etapas de su vida
+                        Tipo: Público
+                    </p>
+                </div>
+                <img src="img/hospital-posadas.jpg" alt="">
+            </article>
+            <article>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9678719346634!2d-58.577513284769594!3d-34.630252180452665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb80b7396b9af%3A0xef2dc611cc3efabb!2sPosadas!5e0!3m2!1ses-419!2sar!4v1591101579924!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+            </article>
+        </section>
+
+        <section class="contenedorCajaHospitales">
+            <article class="contenedorInfoHospital">
+                <h3><a id="abrirGuemes"> HOSPITAL LUIS ALEJANDRO GUEMES</a></h3>
+                <div class="popupGuemes" style="display: block;">
+                    <a id="cerrarGuemes">Cerrar</a>
+                    <h2>Hospital GUEMES</h2>
+                        <p>Hospital general en Haedo
+                            Dirección: Av. Rivadavia 15000, 1706 Haedo, Provincia de Buenos Aires
+                            Horario: 
+                            Abierto las 24 horas                         
+                            
+                            Teléfono: 011 4659-2011
+                        </p>
+                    </div>
+                <img src="img/hospital-guemes.jpg" alt="">
+            </article>
+            <article>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.511374284702!2d-58.58209258476933!3d-34.6417862804496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc78d02648b9f%3A0x5cc20a3162a10da4!2sHospital%20Interzonal%20General%20de%20Agudos%20&#39;&#39;Profesor%20Dr.%20Luis%20G%C3%BCemes&#39;&#39;!5e0!3m2!1ses-419!2sar!4v1591101972916!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> 
+            </article>
+        </section>
+
+        <section class="contenedorCajaHospitales">
+            <article class="contenedorInfoHospital">
+                <h3><a id="abrirJuan">HOSPITAL SAN JUAN DE DIOS</a></h3>
+                <div class="popupJuan" style="display: block;">
+                    <a id="cerrarJuan">Cerrar</a>
+                    <h2>Hospital SAN JUAN De DIOS</h2>
+                        <p>Hospital general en Ramos Mejía
+                            Dirección: Dr. Gabriel Ardoino 714, Ramos Mejía, Provincia de Buenos Aires
+                            Horario: 
+                            Abierto las 24 horas
+                                                       
+                            Teléfono: 011 4469-9500
+                        </p>
+                    </div>
+                <img src="Img/hospital-sanJuanDeDios.jpg" alt="">
+            </article>
+            <article>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13130.522398041994!2d-58.563915530224634!3d-34.6387742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7e286ccd8e5%3A0x93fa02cd67bca974!2sCasa%20Hospital%20San%20Juan%20de%20Dios!5e0!3m2!1ses-419!2sar!4v1591102075432!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <aside>
+            <h4 id="integrantes">Integrantes</h4>
+            <p>Juan Manuel Bringa</p>
+            
+            <p>31981186</p>
+            
+            <p>Ivo Spruth</p>
+            
+            <p>41705481</p>
+        </aside>
+        <aside id="footerAsideMenu">
+            <h4 id="menuFooter">Menu</h4>
+            <a href="index.html">HOME</a>
+            <a href="listadoDeEnfermedad.html">ENFERMEDADES</a>
+            <a href="">VACUNACION</a>
+            <a href="contacto.html">CONTACTO</a> 
+        </aside>
+        <aside id="redesSociales">
+           <h4>Redes Sociales</h4>
+            <p><img src="img/facebook.png" alt="facebook">  </p>
+            <p><img src="Img/twitter.png" alt=""></p>
+            <p><img src="Img/instagram-new.png" alt=""></p>
+            
+        </aside>
+    </footer>
+</body>
+</html>

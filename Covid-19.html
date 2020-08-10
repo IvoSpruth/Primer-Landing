@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19</title>
+    <link rel="stylesheet" href="Css/estilos.css">
+    <link rel="stylesheet" href="Css/detalleEnfermedad.css">
+    <script src="js/covid.js"></script>
+</head>
+<body>
+    <header>
+        <section class="contenedorHeader">
+            
+            <div class="item1">
+                <img id="logo" src="img/Logo-Empresa.png" alt="">
+            </div>
+            <div class="item2">
+                <h2> 
+                    <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+                        <input id="buscadorRecuadro" list="menu" name="menu">
+                         <datalist id="menu">
+                           <option value="Hospitales"></option>
+                           <option value="Enfermedades"></option>
+                           <option value="Contacto"></option>
+                           <option value="Vacunas"></option>
+                           <option value="Home"></option>
+                         </datalist>
+                         <input type="submit" value="Buscar">
+                     </form>
+                </h2>
+            </div>
+            <div class="contenedorUsuario">
+                <div id="logIn">
+                   <a href="contacto.html"><p>LOG IN</p></a> 
+                </div>
+                <div id="singIn">
+                   <a href="contacto.html"><p>SING IN</p></a> 
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="listadoDeEnfermedad.html">ENFERMEDADES</a>
+        <a href="vacunacion.html">VACUNACION</a>
+        <a href="contacto.html">CONTACTO</a>
+        <a href="hospitales.html">HOSPITALES</a>
+    </nav>
+
+    <main>
+        <h1>COVID-19</h1>
+
+        <section id="contenedorCajaTextoInfoCovid">
+            <article class="imagenVirus" >
+                <img class="imagenVirus" src="Img/foto-virus.jpg" alt="">
+            </article>
+            <article id="cajatextoDeCoronavirus">
+                <p id="infoCovid">Los coronavirus son una familia de virus que pueden causar enfermedades como el resfriado común, el síndrome respiratorio agudo grave (SARS, por sus siglas en inglés), y el síndrome respiratorio de Oriente Medio (MERS, por sus siglas en inglés). En 2019 se identificó un nuevo coronavirus como la causa de un brote de enfermedades que se originó en China.
+                    Este virus ahora se conoce como el síndrome respiratorio agudo grave coronavirus 2 (SARS-CoV-2). La enfermedad que causa se llama enfermedad del coronavirus 2019 (COVID-19). En marzo de 2020 la Organización Mundial de la Salud (OMS) declaró que este brote de COVID-19 es una pandemia.
+                    Las organizaciones de salud pública, incluyendo los Centros para el Control y la Prevención de Enfermedades de los Estados Unidos (CDC) y OMS están vigilando la pandemia y publicando actualizaciones en sus sitios web. Estos grupos también han publicado recomendaciones para prevenir y tratar esta enfermedad.
+                        </p>
+
+            </article>
+        </section>
+
+        <h2>FORMULARIO DE DETECCION COVID-19</h2>
+        <section>
+            <article>
+                <p>Hola usuario! si tenes sintomas de Covid-19 o has estado en contacto con una persona afectada deberias hacer un control y seguimiento diario de tus sintomas.</p>
+               
+                <p>Esta aplicacion te permitira hacer un seguimiento de la evolucion de los sintomas y te dara indicaciones y consejos a seguir a cada paso. El uso de este servicio supone la aceptacion de los terminos y la politica de privacidad descritos en Terminos y Condiciones.</p>
+
+                <h3>SÍNTOMAS</h3>
+                <div class="contenedorImagenesDeSintomas">
+                    <img src="img/23-fiebre-tos.png" alt="">
+                    <img src="img/24-fiebre-dolor-garganta.png" alt="">
+                    <img src="img/25-fiebre-dificultad-respirar.png" alt="">
+                </div>
+            </article>
+            <article id="contenedorFormulario">
+                <form action="#" onsubmit="return validar()" method="get" enctype="application/x-www-form-urlencoded">
+                    <div class="contenedorColumnasFormulario">
+
+                        <label class="inputText" class="" for="nombreYapellido">Nombre y Apellido:</label> <br>
+                        <input class="inputText" type="text" name="nombreYapellido" id="nombreYapellido" placeholder="ingrese nombre y apellido">
+                        <br>
+                        <label class="inputText" for="dni">DNI:</label>
+                        <br>
+                        <input class="inputText" type="text" name="dni" id="dni" placeholder="ingrese dni">
+                        <br>
+                        <label class="inputText" for="telefono">Telefono:</label><br>
+                        <input class="inputText" type="number" name="telefono" id="telefono" placeholder="ingrese telefono">
+                        <br>
+                        <label class="inputText" for="provincia">Provincia:</label>
+                        <br>
+                        <select class="inputText" name="provincia" id="ciudad">
+                            <option value="0"></option>
+                            <option value="BA">Buenos Aires</option>
+                            <option value="CABA">Ciudad de Buenos Aires</option>
+                            <option value="CO">Córdoba</option>
+                            <option value="ER">Entre Rios</option>
+                            <option value="SF">Santa Fe</option>
+                            <option value="CM">Catamarca</option>
+                            <option value="JY">Jujuy</option>
+                            <option value="SC">Santa Cruz</option>
+                            <option value="TF">Tierra del Fuego</option>
+                        </select>
+
+                        
+                    </div>
+                    
+                    <br>
+                    <label for="sexo">SEXO:</label><br>
+                    M <input type="radio" name="sexo" id="masculino">  F <input type="radio" name="sexo" id="femenino">  N/B <input type="radio" name="sexo" id="n/b">
+                    <br><br>
+                    <label for="viajo">Has viajado al exterior de la Republica Argentina?</label><br>
+                    SI <input class="radio" type="radio" name="viajo" value="si" id="siViajo" onchange="cambiar()"> NO <input type="radio" name="viajo" id="noViajo" value="no" onchange="cambiar()"><select name="paises" id="paises" class="oculto">
+                        <option value="USA">EEUU</option>
+                        <option value="UK">Reino Unido</option>
+                        <option value="RU">Rusia</option>
+                        <option value="AU">Australia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CH">Chile</option>
+                        <option value="FR">Francia</option>
+                        <option value="IT">Italia</option>
+                        <option value="AL">Alemania</option>
+                        <option value="ES">España</option>
+                        </select>
+                    <br><br>
+                    <label for="">POR FAVOR, INDIQUE LOS SINTOMAS QUE PRESENTA:</label><br>
+                    <br>
+
+                    <label for="fiebre">Tuviste fiebre mayor a 38° ?</label><br>
+                    SI <input class="radio" type="radio" name="fiebre" id="si"> NO <input type="radio" name="fiebre" id="no">
+                    <br><br>
+
+                    <label for="dolorCabeza">Tuviste dolor de cabeza?</label><br>
+                    SI <input class="radio" type="radio" name="dolorCabeza" id="si"> NO <input type="radio" name="dolorCabeza" id="no">
+                    <br><br>
+
+                    <label for="tos">Tuviste una tos persistente?</label><br>
+                    SI <input class="radio" type="radio" name="tos" id="si"> NO <input type="radio" name="tos" id="no">
+                    <br><br>
+
+                    <label for="dolorGarganta">Tuviste dolor de garganta?</label><br>
+                    SI <input class="radio" type="radio" name="dolorGarganta" id="si"> NO <input type="radio" name="dolorGarganta" id="no">
+                    <br><br>
+
+                    <label for="dificultadRespiratoria">Tuviste dificultad para respirar?</label><br>
+                    SI <input class="radio" type="radio" name="dificultadRespiratoria" onchange="cambiar2()" id="siDifRes" value="si"> NO <input type="radio" name="dificultadRespiratoria" onchange="cambiar2()" id="noDifRes" value="no"> <input type="text" name="direccion" id="direccion" placeholder="ingrese su direccion" class="oculto"><br><br>
+                    
+                    <input type="submit" value="ENVIAR">  <input type="reset" value="RESET">
+                    <div id="mensajeError" class="error" style="color:crimson" >
+
+                    </div>
+                </form>
+            </article>
+        </section>
+
+        <section class="contenedorSectionMedidasPrecaucion">
+            <h3>MEDIDAS DE PRECAUCIÓN</h3>
+            <article class="contenedorMedidasdePrecaucion">
+                <img src="img/14-lavarse-manos.png" alt="">
+                <img src="img/15-estornudar.png" alt="">
+                <img src="img/16-tocar-nariz.png" alt="">
+                <img src="img/17-ventilar.png" alt="">
+                <img src="img/18-limpiar-objetos.png" alt="">
+                <img src="img/19-permanecer-domicilio.png" alt="">
+                <img src="img/20-reducir-contacto.png" alt="">
+                <img src="img/21-no-compartir-mate.png" alt="">
+            </article>
+        </section>
+
+        <h3 id="tituloHospitales">HOSPITALES MAS CERCANOS ESPECIALIZADOS EN LA ENFERMEDAD</h3>
+        <section class="contenedorHospitalesEspecializados">
+            <article class="contenedorInformacionHospital">
+                <h4>Hospital Policlinico Profesor A Posadas</h4>
+                <p>Telefono:0800-222.3435</p>   
+                <p>Dirección:Avenida Presidente Arturo U. Illia s/n y Marconi Morón 386</p>
+                <p>Ciudad:Buenos Aires</p>        
+            </article>
+            <article class="contenedorMapaDelHospital">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.9799731043177!2d-58.57736358476966!3d-34.62994638045262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb80b7396b9af%3A0xef2dc611cc3efabb!2sPosadas!5e0!3m2!1ses-419!2sar!4v1589834330796!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <aside>
+            <h4 id="integrantes">Integrantes</h4>
+            <p>Juan Manuel Bringa</p>
+            
+            <p>31981186</p>
+            
+            <p>Ivo Spruth</p>
+            
+            <p>41705481</p>
+        </aside>
+        <aside id="footerAsideMenu">
+            <h4 id="menuFooter">Menu</h4>
+            <a href="index.html">HOME</a>
+            <a href="listadoDeEnfermedad.html">ENFERMEDADES</a>
+            <a href="">VACUNACION</a>
+            <a href="contacto.html">CONTACTO</a> 
+        </aside>
+        <aside id="redesSociales">
+           <h4>Redes Sociales</h4>
+            <p><img src="img/facebook.png" alt="facebook">  </p>
+            <p><img src="Img/twitter.png" alt=""></p>
+            <p><img src="Img/instagram-new.png" alt=""></p>
+        </aside>
+    </footer>
+</body>
+</html>

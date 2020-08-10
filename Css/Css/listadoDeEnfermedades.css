@@ -1,0 +1,67 @@
+main{
+    margin-bottom: 15px;
+}
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    text-decoration: underline black;
+}
+section{
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    
+}
+section article{
+    background-color: rgb(146, 139, 139);
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-top: 15px;
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    width: calc(47% - 2px);
+
+}
+section article a{
+    color: black;
+}
+
+.contenedorImg{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.fotoVirus {
+    width: 30%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    /* border-radius: 50px;  */
+    /* background-repeat: no-repeat; */
+    border-radius: 90%;
+    /* background-position: 50%; */
+    /* background-size: 100% auto; */
+}
+.txt{
+    width: 60%;
+}
+.info{
+    text-align: right;
+}
+.contenedorTxtInfo{
+    display: flex;
+    
+}
+
+#buscadorEnfermedades{
+    width: 400px;
+    height: 28px;
+    border: 2px solid grey;
+    border-radius: 15px;
+}
+

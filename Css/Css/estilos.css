@@ -1,0 +1,431 @@
+
+body{
+    background-color: #E2F3FA;
+}
+/* -----------HEADER------------- */
+#logo{
+    width: 160px;
+    height: 112px;
+}
+header{
+    border-bottom:2px solid #dde6dd;
+    margin: 0em;
+    height: 7em;
+    background-color: #4A8FA7;
+    width: 100%;
+}
+.contenedorHeader{
+    display: flex;
+   /*  display: -webkit-flex;
+    display: -ms-flexbox; */
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+.item1{
+    width: 15%;
+}
+.item2{
+    text-align: center;
+    /* margin-right: 5em; */
+    margin-top: 2em;
+    width: 70%;
+}
+#buscadorRecuadro{
+    width: 400px;
+    height: 28px;
+    border: 2px solid grey;
+    border-radius: 15px;
+}
+#select{
+    width: 350px;
+    height: 30px;
+}
+.contenedorUsuario{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.contenedorUsuario p{
+    text-align: center;
+    color: #fff;
+}
+.contenedorUsuario a{
+    text-decoration: none;
+    
+}
+#logIn{
+    width: 100%;
+    height: 48%;
+    /* height: 35px; */
+    background-color: rgb(112, 106, 106);
+}
+#singIn{
+    border-top: 2px solid rgb(85, 80, 80);
+    width: 100%;
+    height: 45%;
+    background-color: rgb(112, 106, 106);
+  /*   height: 38px; */
+}
+/* ------------------------------- */
+
+/* ----------------MAIN------------ */
+main{
+    background-color:#E2F3FA;
+    
+}
+
+/* -------------------------------- */
+
+/* --------------MENU DE NAVEGACION--------------------- */
+nav{
+    border-bottom: #dde6dd solid;
+    background-color: rgb(104, 99, 99);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+nav a{
+    padding-top: 5px;
+    color: #ccc;
+    width: 20%;
+    height: 25px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: rgb(9, 12, 61);
+    background-color: #BAD2EE;  
+    border: rgb(9, 12, 61) 3px solid;
+    width: 19%;
+}
+/* ----MAIN INDEX ---- */
+.contenedorSlider2{
+    width: 100%;
+    margin-top: 0.2em;
+}
+
+.contenedorMain{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 155px;
+    margin-bottom: 40px;
+}
+main aside{
+    width: 33%;
+    border: #000 solid;
+    background-color: #BAD2EE;
+    background-position: top;
+    border-radius: 100%;
+    text-align: center;
+    margin-right: 60px;
+    margin-left: 60px;
+    padding: 50px;
+    font-size: 25px;
+}
+main aside a{
+    color: black;
+    text-decoration: none;
+}
+.tel{
+   max-width: 100%;
+    height: 22em;
+}
+#imagenMain{
+    /* height: auto; */
+    /* width: auto; */
+    width: 100%;
+    height: 100%;
+}
+
+/* ----------------------------------------------------- */
+
+
+/* ----------------FOOTER----------------------------*/
+footer{
+    width: 100%;
+    /* background-color:#4A8FA7; */
+    background-color: rgb(125, 139, 143);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+footer aside{
+    width: 33.3%;
+}
+footer aside h4{
+    color: #fff;
+    margin-top: 0em;
+    padding: 10px 0px;
+    background-color: rgb(104, 99, 99);
+    border-top: #fff 3px solid;
+}
+#integrantes{
+    border-right:#fff 3px solid;
+}
+#redesSociales h4{
+    border-left: #fff 3px solid;
+}
+#redesSociales p{
+    height: 35px;
+}
+#footerAsideMenu a{
+    text-decoration: none;
+    color: black;
+    margin: 6px 0px;
+}
+#footerAsideMenu{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+/* -------------------------------------------------- */
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 30em){
+    header{
+        border-bottom:2px solid #dde6dd;
+        margin: 0em;
+        height: 12.8em;
+        background-color: #4A8FA7;
+        width: 100%;
+    }
+    .contenedorHeader{
+        display: flex;
+        flex-direction: row;
+        height: 7em;
+        border-bottom: 2px solid #fff;
+    }
+    .item1{
+        width: 20%;
+    }
+    .item2{
+        text-align: center;
+        margin-top: 0em;
+        width: 65%;
+    }
+    #buscadorRecuadro{
+        width: 12em;
+        height: 28px;
+        border: 2px solid grey;
+        border-radius: 15px;
+    }
+    
+    .contenedorUsuario a{
+        text-decoration: none;
+        height: 5em;
+    }
+    #logIn{
+        height: 48%;
+        border: none;
+    }
+    #singIn{
+        height: 52%;
+        border: none;
+    }
+    #formHeader{
+        margin-top: 2em;
+    }
+/* NAV */
+    nav{
+        border-bottom: #dde6dd solid;
+        background-color: rgb(104, 99, 99);
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 1.2em;
+    }
+    nav a{
+        padding-top: 5px;
+        color: #ccc;
+        width: 50%;
+        height: 25px;
+        text-decoration: none;
+    }
+    nav a:hover{
+        color: rgb(9, 12, 61);
+        background-color: #BAD2EE;  
+        border: rgb(9, 12, 61) 3px solid;
+        width: 50%;
+    }
+    #menuHospital{
+        width: 100%;
+    }
+
+    /* main */
+.contenedorMain{
+    height: 18em;
+}
+.contenedorMain aside{
+    margin: 0px 5px 0px 29px;
+}
+
+    /* footer */
+footer{
+    font-size: 0.8em;
+}
+footer aside h4{
+    height: 2.5em;
+    text-align: center;
+}
+}
+
+
+@media screen and (max-width:47em){   /*  (resolucion tablet) */
+
+    /* -----------HEADER------------- */
+/*Responsive*/
+#contenedorCajaTextoInfoCovid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.InfoCovid {
+    width: calc(50% - 1em);
+
+}
+.imagenVirus{
+    max-width: 100%;
+}
+#cajatextoDeCoronavirus{
+    max-width: 100%;
+}
+
+ #logo{
+    width: 100%;
+    height: 112px;
+}
+header{
+    border-bottom:2px solid #dde6dd;
+    margin: 0em;
+    height: 7em;
+    background-color: #4A8FA7;
+    width: 100%;
+}
+.contenedorHeader{
+    display: flex;
+    flex-direction: row;
+    
+}
+.contenedorHeader {
+    padding-bottom: 5px;
+}
+.contenedorHeader #login{
+    height: 50%;
+}
+.contenedorHeader #singin {
+    height: 50%;
+}
+
+
+.item1{
+    width: 20%;
+}
+.item2{
+    text-align: center;
+    margin-top: 2em;
+    width: 65%;
+}
+#buscadorRecuadro{
+    width: 16em;
+    height: 28px;
+    border: 2px solid grey;
+    border-radius: 15px;
+}
+
+.contenedorUsuario a{
+    text-decoration: none;
+    
+}
+/* ------------------------------- */
+
+nav{
+    border-bottom: #dde6dd solid;
+    background-color: rgb(104, 99, 99);
+    text-align: center;
+    display: block;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+nav a{
+    padding: 5px;
+    color: #ccc;
+    width: 33%;
+    height: 25px;
+    text-decoration: none;
+   
+}
+nav a:hover{
+    color: rgb(9, 12, 61);
+    background-color: #BAD2EE;  
+    border: rgb(9, 12, 61) 3px solid;
+    width: 50%;
+}
+.contactoYhospital{
+    width: 48%;
+}
+
+/* ------------------------------------- */
+/* MAIN */
+.contenedorMain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 20em;
+    margin: 0em;
+    padding-bottom: 0.7em;
+}
+main aside{
+    width: 70%;
+    border: #000 solid;
+    background-color: #BAD2EE;
+    /* background-position: top; */
+    border-radius: 15px;
+    text-align: center;
+    font-size: 25px;
+    padding: 1em 0.5em;
+    margin-bottom: 0.5em;
+}
+main aside a{
+    color: black;
+    text-decoration: none;
+}
+.tel{
+    height: 15em;
+}
+.tel img{
+height: 100%;
+}
+
+}
+
+@media screen and (max-width:60em){
+    #buscadorRecuadro{
+        max-width: 60%;
+    }
+    #contenedorCajaTextoInfoCovid{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagenVirus{
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viral Point</title>
+    <link rel="stylesheet" href="Css/estilos.css">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nivo-slider.css"/>
+        <link rel="stylesheet" href="css/default.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+        <script type="text/javascript" src="js/jquery.nivo.slider.js"></script> 
+        <script type="text/javascript">
+            $(window).load(function() {
+                $('#otro').nivoSlider();
+            });
+        </script>
+
+</head>
+<body>
+    <header>
+        <section class="contenedorHeader">
+            
+            <div class="item1">
+                <img id="logo" src="img/Logo-Empresa.png" alt="">
+            </div>
+            <div class="item2">
+                <h2> 
+                    <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+                        <input id="buscadorRecuadro" list="menu" name="menu">
+                         <datalist id="menu">
+                           <option value="Hospitales"></option>
+                           <option value="Enfermedades"></option>
+                           <option value="Contacto"></option>
+                           <option value="Vacunas"></option>
+                           <option value="Home"></option>
+                         </datalist>
+                         <input type="submit" value="Buscar">
+                     </form>
+                </h2>
+            </div>
+            <div class="contenedorUsuario">
+                <div id="logIn">
+                   <a href="contacto.html"><p>LOG IN</p></a> 
+                </div>
+                <div id="singIn">
+                   <a href="contacto.html"><p>SING IN</p></a> 
+                </div>
+            </div>
+        </section>
+    </header>
+    <nav>
+        <a href="">HOME</a>
+        <a href="listadoDeEnfermedad.html">ENFERMEDADES</a>
+        <a href="vacunacion.html">VACUNACION</a>
+        <a class="contactoYhospital" href="contacto.html">CONTACTO</a>
+        <a class="contactoYhospital" href="hospitales.html">HOSPITALES</a>
+    </nav>
+    <main class="mainIndex">
+       
+        <section class="contenedorSlider2">
+            <article class="slider-wrapper theme-default">
+                <div id="otro" class="nivoSlider">
+                    <img src="img/hospital-guemes2.jpg" alt="">
+                    <img src="img/sliderParaIndex2.png" data-transition="slideInLeft" alt="">
+                    <img id="fotoSlider3" src="Img/fondo(posible)- detalle de contacto2.jpg" data-transition="slideInLeft" alt="">
+                </div>
+            </article>
+        </section>
+
+        <section class="contenedorMain">
+            <aside>
+                <a href="contacto.html">CONTACTO</a>
+            </aside>
+            <aside>
+                <a href="listadoDeEnfermedad.html">ENFERMEDADES</a>
+            </aside>
+            <aside>
+                <a href="Covid-19.html">COVID-19</a>
+            </aside>
+        </section>
+        <section class="tel">
+            <img id="imagenMain" src="img/ConsultasCoronavirus.jpg" alt="">
+        </section>
+        
+    </main>
+    
+    <footer>
+    <aside>
+        <h4 id="integrantes">Integrantes</h4>
+        <p>Juan Manuel Bringa</p>
+        
+        <p>31981186</p>
+        
+        <p>Ivo Spruth</p>
+        
+        <p>41705481</p>
+    </aside>
+    <aside id="footerAsideMenu">
+        <h4 id="menuFooter">Menu</h4>
+        <a href="">HOME</a>
+        <a href="listadoDeEnfermedad.html">ENFERMEDADES</a>
+        <a href="">VACUNACION</a>
+        <a href="contacto.html">CONTACTO</a>
+    </aside>
+    <aside id="redesSociales">
+        <h4>Redes Sociales</h4>
+            <p><img src="img/facebook.png" alt="facebook">  </p>
+            <p><img src="Img/twitter.png" alt=""></p>
+            <p><img src="Img/instagram-new.png" alt=""></p>
+
+        
+    </aside>
+</footer>
+</body>
+
+</html>

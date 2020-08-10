@@ -1,0 +1,113 @@
+h1{
+    text-align: center;
+}
+main section{
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: row;
+}
+.contenedorCajaHospitales{
+    border: 5px grey solid;
+    border-radius: 15px;
+    margin:10px 5px 30px 5px;
+    background-color: rgb(177, 171, 171);
+}
+article{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+article iframe{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    /* height: 200px; */
+}
+.contenedorInfoHospital{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    text-align: center;
+    color: #fff;
+}
+img{
+    margin-left: 20px;
+    height: 350px;
+    width: 500px;
+}
+#logo{
+    margin-left: 0px;
+}
+footer img{
+    max-width: 30px;
+    max-height: 30px
+}
+.buscador{
+    display: flex;
+    justify-content: center;
+}
+#buscadorRecuadro{
+    width: 400px;
+    height: 28px;
+    border: 2px solid grey;
+    border-radius: 15px;
+}
+
+#footerAsideMenu a{
+    text-decoration: none;
+    color: black;
+}
+
+.popupPosadas {
+    background-color: rgb(150, 147, 147);
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    top: 50px;
+    display: none;
+    border-radius: 5px;
+}
+.popupItaliano {
+    background-color: rgb(150, 147, 147);
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    top: 30px;
+    left: 30px;
+    display: none;
+    border-radius: 5px;
+}
+.popupGuemes {
+    background-color: rgb(150, 147, 147);
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    top: 30px;
+    left: 30px;
+    display: none;
+    border-radius: 5px;
+}
+.popupJuan {
+    background-color: rgb(150, 147, 147);
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    top: 30px;
+    left: 30px;
+    display: none;
+    border-radius: 5px;
+}
+.contenedorCajaHospitales a{
+    color: firebrick;
+    cursor: pointer;
+}
